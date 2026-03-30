@@ -13,6 +13,9 @@
   box-sizing: border-box;
 }
 
+html{
+  font-family: "Arial", sans-serif;
+}
 
 .main-container{
   display: flex;
@@ -80,17 +83,24 @@ cite a{
   flex-direction: column;
 }
 
-.one{
+.one, .two, .three{
   flex: 1;
-  background-color: seagreen;
+}
+
+.one, .three{
+  background-color: #f9fafb;
 }
 
 .two{
-  flex: 1;
-  background-color: lightyellow;
+  background-color: #ffffff;
 }
 
-.three{
-  flex: 1;
-  background-color: mistyrose;
+.one div{
+  width: 70%;
+  margin-left: 20px;
+}
+
+.one div p:first-child{
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
