@@ -15,6 +15,7 @@
 
 html{
   font-family: "Arial", sans-serif;
+  font-size: 16px;
 }
 
 .main-container{
@@ -104,3 +105,47 @@ cite a{
   margin-top: 100px;
   margin-bottom: 20px;
 }
+
+.form-title{
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+form{
+  padding: 2rem;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 3rem;
+}
+
+form p + p{
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+}
+
+input {
+  appearance: none;
+}
+
+input {
+  /* Uniform text field size */
+  width: 200px;
+  height: 1.5rem;
+  border-radius: 2px;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid #999999;
+}
+
+input:focus{
+  /*TODO box-shadow ?*/
+}
+
