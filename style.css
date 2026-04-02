@@ -53,6 +53,7 @@ html{
   padding: 10px;
 }
 
+/* Constrain image size to its containing logo div size */
 .logo img{
   max-width: 100%;
   max-height: 100%;
@@ -66,7 +67,6 @@ html{
 
 cite{
   color: white;
-  font-family: arial;
   font-style: normal;
   font-size: 0.9rem;
   margin-top: auto;
@@ -98,7 +98,7 @@ cite a{
 
 .one div{
   width: 70%;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 
 .one div p:first-child{
@@ -112,7 +112,7 @@ cite a{
 }
 
 form{
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
   font-size: 0.8rem;
   display: flex;
   gap: 3rem;
@@ -127,11 +127,6 @@ label {
 }
 
 input {
-  appearance: none;
-}
-
-input {
-  /* Uniform text field size */
   width: 200px;
   height: 1.5rem;
   border-radius: 2px;
@@ -142,10 +137,40 @@ input:invalid {
 }
 
 input:valid {
-  border: 1px solid #999999;
+  border: 1px solid #E5E7EB;
+}
+
+/* prevent input:focus style being applied at same time as input:invalid */
+input:focus:invalid{
+  outline: none;
 }
 
 input:focus{
-  /*TODO box-shadow ?*/
+  /* Directly override browser-default outline */
+  outline: 1px solid cornflowerblue;
+  box-shadow: 0px 1px 1px black
 }
 
+.two{
+  box-shadow: 0px 3px 3px lightgray;
+  margin-bottom: 5px;
+}
+
+#sign-up-button{
+  margin: 1rem 2rem;
+  padding: 10px 30px;
+  color: white;
+  background-color: #596D48;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.three p{
+  margin: 1rem 2rem;
+}
+
+.three p a{
+  text-decoration: none;
+  color: grey;
+}
